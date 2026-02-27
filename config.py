@@ -26,19 +26,19 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "21655449")
-    API_HASH  = os.environ.get("API_HASH", "112be9974e163f6dbd645ce4b94f4e6a")
+    API_ID    = os.environ.get("API_ID", "20293219")
+    API_HASH  = os.environ.get("API_HASH", "4aef7d9e065d92f4a95736eaeb93d3ac")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "8605444314:AAHZxA7RHBZxBIzUPFlQFQiRYk16a77zldg") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://nshubh345:1FmseyW0TKaWNMNo@cluster0.pgewb.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1229852181').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "team_netflix") 
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6834180565').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "Tamil_Dubbed_Anime_Series") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
     # wes response configuration     
